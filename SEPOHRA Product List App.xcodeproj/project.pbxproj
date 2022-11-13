@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD0EF54C28FECD3E00C15BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF54B28FECD3E00C15BEF /* AppDelegate.swift */; };
+		BD0EF54E28FECD3E00C15BEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF54D28FECD3E00C15BEF /* SceneDelegate.swift */; };
+		BD0EF55628FECD3E00C15BEF /* SEPOHRA_Product_List_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF55428FECD3E00C15BEF /* SEPOHRA_Product_List_App.xcdatamodeld */; };
+		BD0EF55828FECD3F00C15BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0EF55728FECD3F00C15BEF /* Assets.xcassets */; };
+		BD0EF55B28FECD3F00C15BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0EF55928FECD3F00C15BEF /* LaunchScreen.storyboard */; };
+		BD0EF58828FECDD300C15BEF /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF58728FECDD300C15BEF /* ProductViewModel.swift */; };
+		BD0EF58C28FECE4A00C15BEF /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF58B28FECE4A00C15BEF /* State.swift */; };
+		BD0EF59328FED18800C15BEF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF59228FED18800C15BEF /* Constants.swift */; };
+		BD0EF59528FED2DD00C15BEF /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF59428FED2DD00C15BEF /* RequestProtocol.swift */; };
+		BD0EF59728FED2FE00C15BEF /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF59628FED2FE00C15BEF /* RequestType.swift */; };
+		BD0EF59928FED51B00C15BEF /* RequestErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF59828FED51B00C15BEF /* RequestErrorType.swift */; };
+		BD0EF59E28FEDA9300C15BEF /* APIConstants+ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF59D28FEDA9300C15BEF /* APIConstants+ProductList.swift */; };
+		BD0EF5A228FEDAD500C15BEF /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF5A128FEDAD500C15BEF /* ProductModel.swift */; };
+		BD0EF5A428FEDDB800C15BEF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF5A328FEDDB800C15BEF /* API.swift */; };
+		BD0EF5A628FEE21500C15BEF /* ProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF5A528FEE21500C15BEF /* ProductRequest.swift */; };
+		BD0EF5A828FFFB2D00C15BEF /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF5A728FFFB2D00C15BEF /* ProductListViewController.swift */; };
+		BD0EF5AA28FFFC7100C15BEF /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF5A928FFFC7100C15BEF /* Section.swift */; };
+		BD0EF5AC2900032200C15BEF /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF5AB2900032200C15BEF /* ProductListCell.swift */; };
+		BD0EF5AE2901784300C15BEF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF5AD2901784300C15BEF /* Endpoint.swift */; };
+		BD0EF5B129017CE300C15BEF /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EF5B029017CE300C15BEF /* Decoder.swift */; };
+		BD238573290C1468009FA08B /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD238572290C1468009FA08B /* PersistenceManager.swift */; };
+		BD238575290C1472009FA08B /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD238574290C1472009FA08B /* EntityManager.swift */; };
+		BD23857A29102F56009FA08B /* Product+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD23857929102F56009FA08B /* Product+CoreData.swift */; };
+		BD8ED055290183B900BE71FD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8ED054290183B900BE71FD /* APIService.swift */; };
+		BD94ADEB2912B50A00FCFEFC /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94ADEA2912B50A00FCFEFC /* ProductService.swift */; };
+		BD94ADED2912B58400FCFEFC /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94ADEC2912B58400FCFEFC /* ImageService.swift */; };
+		BD94ADF2291E781200FCFEFC /* ProductViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94ADF1291E781200FCFEFC /* ProductViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD0EF56228FECD3F00C15BEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD0EF54028FECD3D00C15BEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD0EF54728FECD3E00C15BEF;
+			remoteInfo = "SEPOHRA Product List App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD0EF54828FECD3E00C15BEF /* SEPOHRA Product List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SEPOHRA Product List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0EF54B28FECD3E00C15BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD0EF54D28FECD3E00C15BEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD0EF55528FECD3E00C15BEF /* SEPOHRA_Product_List_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SEPOHRA_Product_List_App.xcdatamodel; sourceTree = "<group>"; };
+		BD0EF55728FECD3F00C15BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD0EF55A28FECD3F00C15BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD0EF55C28FECD3F00C15BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD0EF56128FECD3F00C15BEF /* SEPOHRA Product List AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SEPOHRA Product List AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0EF58728FECDD300C15BEF /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		BD0EF58B28FECE4A00C15BEF /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		BD0EF59228FED18800C15BEF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD0EF59428FED2DD00C15BEF /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		BD0EF59628FED2FE00C15BEF /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		BD0EF59828FED51B00C15BEF /* RequestErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestErrorType.swift; sourceTree = "<group>"; };
+		BD0EF59D28FEDA9300C15BEF /* APIConstants+ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIConstants+ProductList.swift"; sourceTree = "<group>"; };
+		BD0EF5A128FEDAD500C15BEF /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		BD0EF5A328FEDDB800C15BEF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BD0EF5A528FEE21500C15BEF /* ProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequest.swift; sourceTree = "<group>"; };
+		BD0EF5A728FFFB2D00C15BEF /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		BD0EF5A928FFFC7100C15BEF /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		BD0EF5AB2900032200C15BEF /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
+		BD0EF5AD2901784300C15BEF /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		BD0EF5B029017CE300C15BEF /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		BD238572290C1468009FA08B /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		BD238574290C1472009FA08B /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		BD23857929102F56009FA08B /* Product+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreData.swift"; sourceTree = "<group>"; };
+		BD8ED054290183B900BE71FD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		BD94ADEA2912B50A00FCFEFC /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		BD94ADEC2912B58400FCFEFC /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		BD94ADF1291E781200FCFEFC /* ProductViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD0EF54528FECD3E00C15BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD0EF55E28FECD3F00C15BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD0EF53F28FECD3D00C15BEF = {
+			isa = PBXGroup;
+			children = (
+				BD0EF54A28FECD3E00C15BEF /* SEPOHRA Product List App */,
+				BD0EF56428FECD3F00C15BEF /* SEPOHRA Product List AppTests */,
+				BD0EF54928FECD3E00C15BEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD0EF54928FECD3E00C15BEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF54828FECD3E00C15BEF /* SEPOHRA Product List App.app */,
+				BD0EF56128FECD3F00C15BEF /* SEPOHRA Product List AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD0EF54A28FECD3E00C15BEF /* SEPOHRA Product List App */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF58D28FED0FD00C15BEF /* Core */,
+				BD0EF57F28FECD6900C15BEF /* Features */,
+				BD0EF57E28FECD5000C15BEF /* AppDelegate */,
+				BD0EF55728FECD3F00C15BEF /* Assets.xcassets */,
+				BD0EF55928FECD3F00C15BEF /* LaunchScreen.storyboard */,
+				BD0EF55C28FECD3F00C15BEF /* Info.plist */,
+				BD0EF55428FECD3E00C15BEF /* SEPOHRA_Product_List_App.xcdatamodeld */,
+			);
+			path = "SEPOHRA Product List App";
+			sourceTree = "<group>";
+		};
+		BD0EF56428FECD3F00C15BEF /* SEPOHRA Product List AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD94ADF0291E77F100FCFEFC /* ProductListTest */,
+			);
+			path = "SEPOHRA Product List AppTests";
+			sourceTree = "<group>";
+		};
+		BD0EF57E28FECD5000C15BEF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF54B28FECD3E00C15BEF /* AppDelegate.swift */,
+				BD0EF54D28FECD3E00C15BEF /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BD0EF57F28FECD6900C15BEF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF58028FECD7200C15BEF /* ProductList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		BD0EF58028FECD7200C15BEF /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF58328FECD8800C15BEF /* Extensions */,
+				BD0EF58228FECD7E00C15BEF /* Screens */,
+				BD0EF58128FECD7700C15BEF /* Resources */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		BD0EF58128FECD7700C15BEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BD0EF58228FECD7E00C15BEF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF58928FECE2400C15BEF /* ProductList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BD0EF58328FECD8800C15BEF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF59D28FEDA9300C15BEF /* APIConstants+ProductList.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD0EF58428FECD9500C15BEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF5AB2900032200C15BEF /* ProductListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD0EF58528FECD9D00C15BEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF58728FECDD300C15BEF /* ProductViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BD0EF58628FECDA200C15BEF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF5A728FFFB2D00C15BEF /* ProductListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BD0EF58928FECE2400C15BEF /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF58A28FECE2D00C15BEF /* Enums */,
+				BD0EF58628FECDA200C15BEF /* ViewControllers */,
+				BD0EF58528FECD9D00C15BEF /* ViewModels */,
+				BD0EF58428FECD9500C15BEF /* Views */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		BD0EF58A28FECE2D00C15BEF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF58B28FECE4A00C15BEF /* State.swift */,
+				BD0EF5A928FFFC7100C15BEF /* Section.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BD0EF58D28FED0FD00C15BEF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF59F28FEDAC000C15BEF /* Data */,
+				BD0EF58E28FED10000C15BEF /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BD0EF58E28FED10000C15BEF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BD8ED053290183A700BE71FD /* Services */,
+				BD0EF5AF29017CD900C15BEF /* Helpers */,
+				BD0EF59A28FED7A000C15BEF /* Requests */,
+				BD0EF59128FED13B00C15BEF /* API */,
+				BD0EF59028FED13500C15BEF /* Protocols */,
+				BD0EF58F28FED12D00C15BEF /* Enums */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BD0EF58F28FED12D00C15BEF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF59628FED2FE00C15BEF /* RequestType.swift */,
+				BD0EF59828FED51B00C15BEF /* RequestErrorType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BD0EF59028FED13500C15BEF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF59428FED2DD00C15BEF /* RequestProtocol.swift */,
+				BD0EF5AD2901784300C15BEF /* Endpoint.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BD0EF59128FED13B00C15BEF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF59228FED18800C15BEF /* Constants.swift */,
+				BD0EF5A328FEDDB800C15BEF /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BD0EF59A28FED7A000C15BEF /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF5A528FEE21500C15BEF /* ProductRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		BD0EF59F28FEDAC000C15BEF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BD23857829102F45009FA08B /* Extensions */,
+				BD0EF5A028FEDAC500C15BEF /* Models */,
+				BD238574290C1472009FA08B /* EntityManager.swift */,
+				BD238572290C1468009FA08B /* PersistenceManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BD0EF5A028FEDAC500C15BEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF5A128FEDAD500C15BEF /* ProductModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD0EF5AF29017CD900C15BEF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BD0EF5B029017CE300C15BEF /* Decoder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BD23857829102F45009FA08B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD23857929102F56009FA08B /* Product+CoreData.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD8ED053290183A700BE71FD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BD8ED054290183B900BE71FD /* APIService.swift */,
+				BD94ADEA2912B50A00FCFEFC /* ProductService.swift */,
+				BD94ADEC2912B58400FCFEFC /* ImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BD94ADF0291E77F100FCFEFC /* ProductListTest */ = {
+			isa = PBXGroup;
+			children = (
+				BD94ADF1291E781200FCFEFC /* ProductViewModelTests.swift */,
+			);
+			path = ProductListTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD0EF54728FECD3E00C15BEF /* SEPOHRA Product List App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD0EF57528FECD3F00C15BEF /* Build configuration list for PBXNativeTarget "SEPOHRA Product List App" */;
+			buildPhases = (
+				BD0EF54428FECD3E00C15BEF /* Sources */,
+				BD0EF54528FECD3E00C15BEF /* Frameworks */,
+				BD0EF54628FECD3E00C15BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SEPOHRA Product List App";
+			productName = "SEPOHRA Product List App";
+			productReference = BD0EF54828FECD3E00C15BEF /* SEPOHRA Product List App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD0EF56028FECD3F00C15BEF /* SEPOHRA Product List AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD0EF57828FECD3F00C15BEF /* Build configuration list for PBXNativeTarget "SEPOHRA Product List AppTests" */;
+			buildPhases = (
+				BD0EF55D28FECD3F00C15BEF /* Sources */,
+				BD0EF55E28FECD3F00C15BEF /* Frameworks */,
+				BD0EF55F28FECD3F00C15BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD0EF56328FECD3F00C15BEF /* PBXTargetDependency */,
+			);
+			name = "SEPOHRA Product List AppTests";
+			productName = "SEPOHRA Product List AppTests";
+			productReference = BD0EF56128FECD3F00C15BEF /* SEPOHRA Product List AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD0EF54028FECD3D00C15BEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BD0EF54728FECD3E00C15BEF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BD0EF56028FECD3F00C15BEF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BD0EF54728FECD3E00C15BEF;
+					};
+				};
+			};
+			buildConfigurationList = BD0EF54328FECD3D00C15BEF /* Build configuration list for PBXProject "SEPOHRA Product List App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD0EF53F28FECD3D00C15BEF;
+			productRefGroup = BD0EF54928FECD3E00C15BEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD0EF54728FECD3E00C15BEF /* SEPOHRA Product List App */,
+				BD0EF56028FECD3F00C15BEF /* SEPOHRA Product List AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD0EF54628FECD3E00C15BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0EF55B28FECD3F00C15BEF /* LaunchScreen.storyboard in Resources */,
+				BD0EF55828FECD3F00C15BEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD0EF55F28FECD3F00C15BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD0EF54428FECD3E00C15BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0EF54C28FECD3E00C15BEF /* AppDelegate.swift in Sources */,
+				BD0EF5AC2900032200C15BEF /* ProductListCell.swift in Sources */,
+				BD0EF55628FECD3E00C15BEF /* SEPOHRA_Product_List_App.xcdatamodeld in Sources */,
+				BD0EF59528FED2DD00C15BEF /* RequestProtocol.swift in Sources */,
+				BD8ED055290183B900BE71FD /* APIService.swift in Sources */,
+				BD0EF5B129017CE300C15BEF /* Decoder.swift in Sources */,
+				BD0EF54E28FECD3E00C15BEF /* SceneDelegate.swift in Sources */,
+				BD0EF59328FED18800C15BEF /* Constants.swift in Sources */,
+				BD238575290C1472009FA08B /* EntityManager.swift in Sources */,
+				BD0EF59E28FEDA9300C15BEF /* APIConstants+ProductList.swift in Sources */,
+				BD94ADEB2912B50A00FCFEFC /* ProductService.swift in Sources */,
+				BD0EF5A828FFFB2D00C15BEF /* ProductListViewController.swift in Sources */,
+				BD0EF5A228FEDAD500C15BEF /* ProductModel.swift in Sources */,
+				BD238573290C1468009FA08B /* PersistenceManager.swift in Sources */,
+				BD0EF5A428FEDDB800C15BEF /* API.swift in Sources */,
+				BD23857A29102F56009FA08B /* Product+CoreData.swift in Sources */,
+				BD0EF58828FECDD300C15BEF /* ProductViewModel.swift in Sources */,
+				BD94ADED2912B58400FCFEFC /* ImageService.swift in Sources */,
+				BD0EF58C28FECE4A00C15BEF /* State.swift in Sources */,
+				BD0EF5A628FEE21500C15BEF /* ProductRequest.swift in Sources */,
+				BD0EF5AA28FFFC7100C15BEF /* Section.swift in Sources */,
+				BD0EF59928FED51B00C15BEF /* RequestErrorType.swift in Sources */,
+				BD0EF5AE2901784300C15BEF /* Endpoint.swift in Sources */,
+				BD0EF59728FED2FE00C15BEF /* RequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD0EF55D28FECD3F00C15BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD94ADF2291E781200FCFEFC /* ProductViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD0EF56328FECD3F00C15BEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD0EF54728FECD3E00C15BEF /* SEPOHRA Product List App */;
+			targetProxy = BD0EF56228FECD3F00C15BEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD0EF55928FECD3F00C15BEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD0EF55A28FECD3F00C15BEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD0EF57328FECD3F00C15BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD0EF57428FECD3F00C15BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD0EF57628FECD3F00C15BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y652TUB927;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SEPOHRA Product List App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Moussaab.SEPOHRA-Product-List-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD0EF57728FECD3F00C15BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y652TUB927;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SEPOHRA Product List App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Moussaab.SEPOHRA-Product-List-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD0EF57928FECD3F00C15BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y652TUB927;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Moussaab.SEPOHRA-Product-List-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEPOHRA Product List App.app/SEPOHRA Product List App";
+			};
+			name = Debug;
+		};
+		BD0EF57A28FECD3F00C15BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y652TUB927;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Moussaab.SEPOHRA-Product-List-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEPOHRA Product List App.app/SEPOHRA Product List App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD0EF54328FECD3D00C15BEF /* Build configuration list for PBXProject "SEPOHRA Product List App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0EF57328FECD3F00C15BEF /* Debug */,
+				BD0EF57428FECD3F00C15BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD0EF57528FECD3F00C15BEF /* Build configuration list for PBXNativeTarget "SEPOHRA Product List App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0EF57628FECD3F00C15BEF /* Debug */,
+				BD0EF57728FECD3F00C15BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD0EF57828FECD3F00C15BEF /* Build configuration list for PBXNativeTarget "SEPOHRA Product List AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0EF57928FECD3F00C15BEF /* Debug */,
+				BD0EF57A28FECD3F00C15BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD0EF55428FECD3E00C15BEF /* SEPOHRA_Product_List_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD0EF55528FECD3E00C15BEF /* SEPOHRA_Product_List_App.xcdatamodel */,
+			);
+			currentVersion = BD0EF55528FECD3E00C15BEF /* SEPOHRA_Product_List_App.xcdatamodel */;
+			path = SEPOHRA_Product_List_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD0EF54028FECD3D00C15BEF /* Project object */;
+}
