@@ -9,14 +9,16 @@ import Foundation
 
 
 protocol APIProtocol {
-    func makeRequest(_ requestURL: URLRequest) async throws -> Data
+    func makeRequest(_ endpoint: Endpoint) async throws -> Data
+    func makeRequest(from url: URL) async throws -> Data
 }
 
 final class API: APIProtocol {
     
     private let cachedImages = NSCache<NSString, NSData>()
 
-    func makeRequest(_ requestURL: URLRequest) async throws -> Data {
+    func makeRequest(_ endpoint: Endpoint) async throws -> Data {
+        let requestURL = try endpoint.generateRequestURL()
         let (data, response) = try await URLSession.shared.data(for: requestURL)
         guard let httpResponse = response as? HTTPURLResponse,
               httpResponse.statusCode == 200 else {

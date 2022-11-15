@@ -6,8 +6,9 @@
 //
 
 import Foundation
-
+import UIKit
 
 protocol APIService {
     func perform<T:Decodable>(_ endpoint: Endpoint) async throws -> T
+    func perform(from url: URL) async throws -> UIImage
 }
