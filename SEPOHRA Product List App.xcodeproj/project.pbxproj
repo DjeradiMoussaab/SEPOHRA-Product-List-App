@@ -32,7 +32,6 @@
 		BD23857A29102F56009FA08B /* Product+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD23857929102F56009FA08B /* Product+CoreData.swift */; };
 		BD8ED055290183B900BE71FD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8ED054290183B900BE71FD /* APIService.swift */; };
 		BD94ADEB2912B50A00FCFEFC /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94ADEA2912B50A00FCFEFC /* ProductService.swift */; };
-		BD94ADED2912B58400FCFEFC /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94ADEC2912B58400FCFEFC /* ImageService.swift */; };
 		BD94ADF2291E781200FCFEFC /* ProductViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94ADF1291E781200FCFEFC /* ProductViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 		BD23857929102F56009FA08B /* Product+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreData.swift"; sourceTree = "<group>"; };
 		BD8ED054290183B900BE71FD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		BD94ADEA2912B50A00FCFEFC /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
-		BD94ADEC2912B58400FCFEFC /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		BD94ADF1291E781200FCFEFC /* ProductViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -328,7 +326,6 @@
 			children = (
 				BD8ED054290183B900BE71FD /* APIService.swift */,
 				BD94ADEA2912B50A00FCFEFC /* ProductService.swift */,
-				BD94ADEC2912B58400FCFEFC /* ImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -458,7 +455,6 @@
 				BD0EF5A428FEDDB800C15BEF /* API.swift in Sources */,
 				BD23857A29102F56009FA08B /* Product+CoreData.swift in Sources */,
 				BD0EF58828FECDD300C15BEF /* ProductViewModel.swift in Sources */,
-				BD94ADED2912B58400FCFEFC /* ImageService.swift in Sources */,
 				BD0EF58C28FECE4A00C15BEF /* State.swift in Sources */,
 				BD0EF5A628FEE21500C15BEF /* ProductRequest.swift in Sources */,
 				BD0EF5AA28FFFC7100C15BEF /* Section.swift in Sources */,

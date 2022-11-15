@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct ProductService: APIService {
     
@@ -21,6 +22,12 @@ struct ProductService: APIService {
         let response = try await api.makeRequest(requestURL)
         let decodedResponse: T = try jsonDecoder.decode(response)
         return decodedResponse
+    }
+    
+    func perform(from url: URL) async throws -> UIImage {
+        let data = try await api.makeRequest(from: url)
+        guard let image = UIImage(data: data) else { throw RequestErrorType.DecodingError }
+        return image
     }
 }
 

@@ -14,12 +14,10 @@ final class ProductViewModel {
     var currentState =  CurrentValueSubject<State, Never>(.loading)
 
     private var productService : ProductService
-    private var imageService : ImageService
     private var productEntityManager: ProductEntityManager
     
     init(productService: ProductService = ProductService()) {
         self.productService = productService
-        self.imageService = ImageService()
         self.productEntityManager = ProductEntityManager()
     }
 
@@ -52,7 +50,7 @@ final class ProductViewModel {
     func download(imageURL: String) async -> UIImage? {
         do {
             guard let url = URL(string: imageURL) else { throw RequestErrorType.invalideURL }
-            return  try await imageService.perform(from: url)
+            return  try await productService.perform(from: url)
         } catch {
             return nil
         }
